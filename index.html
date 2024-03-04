@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Reach out to us!</h1>
+    <form>
+      <label>
+        <input
+          class="your-name"
+          type="text"
+          placeholder="Your name*"
+          required
+          minlength="5"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        />
+      </label>
+      <label>
+        <input
+          class="your-email"
+          type="email"
+          placeholder="Your e-mail*"
+          required
+          minlength="5"
+        />
+      </label>
+      <textarea class="your-message" placeholder="Your message*" maxlength="200"></textarea>
+    </form>
+    <div class="yellow-btn">
+      <button class="send-button" type="button">Send message</button>
+    </div>
+
+    <footer>
+      <ul class="socials-list">
+        <li class="socials">
+          <svg><use href="symbol-defs.svg#icon-linkedin"></use></svg>
+        </li>
+        <li class="socials">
+          <svg><use href="symbol-defs.svg#icon-twitter"></use></svg>
+        </li>
+        <li class="socials">
+          <svg><use href="symbol-defs.svg#icon-facebook"></use></svg>
+        </li>
+        <li class="socials">
+          <svg><use href="symbol-defs.svg#icon-pinterest"></use></svg>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
